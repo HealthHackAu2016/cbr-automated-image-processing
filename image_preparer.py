@@ -1,7 +1,5 @@
 import cv2
 import numpy as np
-import imutils
-from skimage import io
 
 
 def show(title, img):
@@ -68,7 +66,7 @@ def crop_seeds(img):
         for (x, y, r) in circles:
             # draw the circle in the output img, then draw a rectangle
             # corresponding to the center of the circle
-            cv2.circle(img, (x, y), r, (255, 255, 255), 6)
+            # cv2.circle(img, (x, y), r, (255, 255, 255), 6)
             cropped = img[y-r:y+r, x-r:x+r]
 
     # write cropped img and show the output img
@@ -174,6 +172,8 @@ def remove_edge(array):
 
 def initialise_white_array(size):
     array = [[[255, 255, 255] for i in range(size)] for j in range(size)];
+    print("test")
+    show("white array", array)
     return array
 
 
@@ -187,3 +187,5 @@ def get_segment_image(original_img, segmented_img, x, y, x2, y2):
         get_segment_image(original_img, segmented_img, x - 1, y, x2 - 1, y2)
         get_segment_image(original_img, segmented_img, x, y + 1, x2, y2 + 1)
         get_segment_image(original_img, segmented_img, x, y - 1, x2, y2 - 1)
+
+    return
