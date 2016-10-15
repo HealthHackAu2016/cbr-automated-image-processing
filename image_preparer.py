@@ -139,15 +139,16 @@ def outline(img):
             leftX = i - 1
             leftY = j
 
-            if np.any(img[aboveX][aboveY] == 255):
-                if np.any(img[leftX][leftY] == 255):
-                    if np.any(img[belowX][belowY] == 255):
-                        if np.any(img[rightX][rightY] == 255):
-                            copy[i][j] = [0, 0, 255]
+            if (boundary(img[aboveX][aboveY], img[rightX][rightY], img[belowX][belowY], img[leftX][leftY])):
+                copy[i][j] = [0, 0, 255]
 
     return copy
 
+def boundary(tup1, tup2, tup3, tup4):
+    if (np.any(tup1 == 255) and np.any(tup2 == 255) and np.any(tup3 == 255) and np.any(tup4 == 255)):
+        return false
 
+    if (np.any(tup1 != 255) and np.any(tup2 != 255) and np.any(tup3 != 255) and np.any(tup4 != 255)):
+        return false
 
-
-d
+    return true
