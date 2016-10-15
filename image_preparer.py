@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import imutils
-import shapedetector
 from skimage import io
 
 

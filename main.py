@@ -1,4 +1,5 @@
 import image_preparer
+import colour_picking
 import argparse
 import cv2
 import sys
@@ -28,6 +29,10 @@ image_preparer.image_show("colour", colour_rect)
 
 # Detect scale for image from colour card rectanger
 # rescaled_img = image_preparer.rescale(crop)
+
+# Get white colour on colour card
+#maxWhite = colour_picking.get_max_rgb(colour_rect)
+#print(maxWhite)
 
 # using CLAHE brightness
 brightness = image_preparer.brightness_auto(img)
