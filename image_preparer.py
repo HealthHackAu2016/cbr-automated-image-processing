@@ -117,3 +117,37 @@ def remove_background(img, bw_image):
             if np.any(bw_image[i][j] == 255):
                 img[i][j] = [255, 255, 255]
     return img
+
+
+def outline(img):
+    width = img.shape[0]
+    height = img.shape[1]
+
+    copy = img.copy()
+
+    for i in range (1, width-1):
+        for j in range (1, height-1):
+            if np.any(img[i][j] == 255) :
+                continue
+
+            aboveX = width
+            aboveY = height - 1
+            rightX = width + 1
+            rightY = height
+            belowX = width
+            belowY = height + 1
+            leftX = width - 1
+            leftY = height
+
+            if np.any(img[aboveX][aboveY] == 255):
+                if np.any(img[leftX][leftY] == 255):
+                    if np.any(img[belowX][belowY] == 255):
+                        if np.any(img[rightX][rightY] == 255):
+                            copy[i][j] = [0, 0, 255]
+
+    return copy
+
+
+
+
+d
