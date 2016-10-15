@@ -130,14 +130,14 @@ def outline(img):
             if np.any(img[i][j] == 255) :
                 continue
 
-            aboveX = width
-            aboveY = height - 1
-            rightX = width + 1
-            rightY = height
-            belowX = width
-            belowY = height + 1
-            leftX = width - 1
-            leftY = height
+            aboveX = i
+            aboveY = j - 1
+            rightX = i + 1
+            rightY = j
+            belowX = i
+            belowY = j + 1
+            leftX = i - 1
+            leftY = j
 
             if np.any(img[aboveX][aboveY] == 255):
                 if np.any(img[leftX][leftY] == 255):
