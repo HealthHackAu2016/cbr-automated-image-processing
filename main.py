@@ -51,7 +51,6 @@ else:
     print("No seed circle detected. Exiting...")
     sys.exit(0)
 
-
 canny = cv2.Canny(crop, 100, 300)
 image_preparer.image_show("canny", canny)
 

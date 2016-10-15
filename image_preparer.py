@@ -76,37 +76,3 @@ def crop_seeds(img):
 
     # write cropped img and show the output img
     return cropped
-
-
-def find_brightest_spot(img):
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    image_show("evaev", gray)
-    (minVal, maxVal, minLoc, maxloc) = cv2.minMaxLoc(gray)
-    print(minLoc)
-    print(minVal)
-
-
-def rescale(img, fixed_size):
-    width, height, channels = img.shape
-
-    # gets image and size of current image
-    rectangle = crop_colours(img)
-    widthr, heightr, channelsr = rectangle.shape
-
-    # can be changed, fixes size of small rectangle
-    r = fixed_size / widthr
-    dim = (fixed_size, int(height * r))
-
-    # perform the actual resizing of the image
-    resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
-    return resized
-
-
-def brighten(img, value):
-    # convert to hsv
-    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-    # change each pixel by value
-    hsv[:, :, 2] += value
-    # reconvert to image
-    img = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
-    return img
