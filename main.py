@@ -35,5 +35,11 @@ else:
 image_preparer.image_write("crop.jpg", crop)
 
 canny = cv2.Canny(crop, 100, 300)
+
 image_preparer.image_write("canny.jpg", canny)
 image_preparer.image_show("canny", canny)
+
+
+# Cropping the colour card rectangle
+colourRect = image_preparer.crop_colours(img)
+image_preparer.image_show("colour", colourRect)
