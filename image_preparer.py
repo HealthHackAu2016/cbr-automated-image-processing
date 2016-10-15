@@ -13,8 +13,7 @@ def brightness_hist(img):
     # get gray-scale copy
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     equ = cv2.equalizeHist(gray)
-    res = np.hstack((gray,equ))
-    return res
+    return equ
 
 
 def brightness_auto(img):
