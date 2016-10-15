@@ -9,6 +9,11 @@ def image_show(title, img):
     return
 
 
+def image_write(path, img):
+    cv2.imwrite(path, img)
+    return
+
+
 def brightness_hist(img):
     # get gray-scale copy
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -35,7 +40,7 @@ def crop_seeds(img):
     output = img.copy()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # detect circles in the img
-    circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 2, 100, param1=350, param2=500, minRadius=100)
+    circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 2, 200, param1=300, param2=500, minRadius=200)
     cropped = None
 
     # ensure at least some circles were found
@@ -53,3 +58,11 @@ def crop_seeds(img):
 
     # write cropped img and show the output img
     return cropped
+
+
+def find_brightest_spot(img):
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    image_show("evaev", gray)
+    (minVal, maxVal, minLoc, maxloc) = cv2.minMaxLoc(gray)
+    print(minLoc)
+    print(minVal)
