@@ -51,20 +51,20 @@ def crop_seeds(img):
     return cropped
 
 def rescale(img):
+    width, height, channels = img.shape
+
     # gets image and size of current image
     rectangle = crop_rectange(img)
     widthr, heightr, channelsr = rectangle.shape
 
     # can be changed, fixes size of small rectangle
     r = 200.0 / widthr
-    dim = (200, int(heightr * r))
+    dim = (200, int(height * r))
 
-    # perform the actual resizing of the image and show it
+    # perform the actual resizing of the image
     resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
 
     return resized
-
-
 
 
 
