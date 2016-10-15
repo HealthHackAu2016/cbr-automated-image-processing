@@ -47,6 +47,7 @@ def get_rgb_from_2darray(array2d):
     idx = random.index(np.amax(random))
     return (array2d[0][idx], array2d[1][idx], array2d[2][idx])
 
+
 def get_max_rgb(color_card):
     return get_rgb_from_2darray(get_colorcard_colors(color_card, [6, 4]))
 
