@@ -124,8 +124,8 @@ def outline(img):
 
     copy = img.copy()
 
-    for i in range (1, width-1):
-        for j in range (1, height-1):
+    for i in range(1, width-1):
+        for j in range(1, height-1):
             if np.any(img[i][j] == 255) :
                 continue
 
@@ -143,11 +143,47 @@ def outline(img):
 
     return copy
 
+
 def boundary(tup1, tup2, tup3, tup4):
     if (np.any(tup1 == 255) and np.any(tup2 == 255) and np.any(tup3 == 255) and np.any(tup4 == 255)):
         return False
-
     if (np.any(tup1 != 255) and np.any(tup2 != 255) and np.any(tup3 != 255) and np.any(tup4 != 255)):
         return False
-
     return True
+
+
+def remove_edge(array):
+    mod_array = array.copy()
+    width = array.shape[0]
+    height = array.shape[1]
+
+    for i in range(0, width):
+        mod_array[i][0] = [255, 255, 255]
+        mod_array[i][1] = [255, 255, 255]
+        mod_array[i][height-1] = [255, 255, 255]
+        mod_array[i][height-2] = [255, 255, 255]
+
+    for j in range(0, height):
+        mod_array[0][j] = [255, 255, 255]
+        mod_array[1][j] = [255, 255, 255]
+        mod_array[width-1][j] = [255, 255, 255]
+        mod_array[width-2][j] = [255, 255, 255]
+
+    return mod_array
+
+
+def initialise_white_array(size):
+    array = [[[255, 255, 255] for i in range(size)] for j in range(size)];
+    return array
+
+
+# segmented_img has some size, x, y tracks where it has searched. Set 2 pixels in edge to ignore hard coding
+def get_segment_image(original_img, segmented_img, x, y, x2, y2):
+    if (np.any(original_img[x][y]) != 255):
+        segmented_img[x2][y2] = original_img[x][y]
+        original_img[x][y] = [255, 255, 255]
+
+        get_segment_image(original_img, segmented_img, x + 1, y, x2 + 1, y2)
+        get_segment_image(original_img, segmented_img, x - 1, y, x2 - 1, y2)
+        get_segment_image(original_img, segmented_img, x, y + 1, x2, y2 + 1)
+        get_segment_image(original_img, segmented_img, x, y - 1, x2, y2 - 1)

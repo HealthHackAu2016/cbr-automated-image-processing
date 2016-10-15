@@ -1,5 +1,6 @@
 import image_preparer
 import image_segment
+import numpy as np
 import argparse
 import colour_picking
 import cv2
@@ -21,8 +22,10 @@ Proposed Method:
     2. Brighten image based on colour card white square
     3. Scale image based on size of colour card
     4. Detect seeds and crop
-    5. Apply segmentation and count for seeds
-    6. Profit?
+    5. Apply segmentation
+    6. Cut each segment invidually
+    7. Measure statistics
+    8. ??? Profit ???
 """
 
 # Cropping the colour card rectangle
@@ -63,15 +66,31 @@ outlined = image_preparer.outline(back_removed)
 image_preparer.show("outlined", outlined)
 
 
+# Do stuff
+removed_edge = image_preparer.remove_edge(back_removed)
+
+width = removed_edge.shape[0]
+height = removed_edge.shape[1]
+count = 0
+
+for i in range(2, width-2):
+    for j in range(2, height-2):
+        if (np.any(removed_edge[i][j]) != 255):
+            new_array = image_preparer.initialise_white_array(5000)
+            image_preparer.get_segment_image(removed_edge, new_array, i, j, 0, 250)
+            image_preparer.show("seed crop", new_array)
+            # FIXME save the 2d array into an image or array, using count
+            count += 1
+
+
+"""
 # Sharpen
 # sharpen = image_preparer.sharpen(crop)
 # image_preparer.show("sharpen", sharpen)
-
-
 watershed = image_segment.watershed_looper(outlined)
 watershed = image_preparer.show("watershed", watershed)
 
-"""
+
 array = [[]]
 for cnt in contours:
     row = rice_stats.widthAndHeight(rice_stats.imageFromContour(cnt),20)
