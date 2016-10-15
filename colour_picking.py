@@ -1,22 +1,9 @@
 import cv2
 import numpy as np
 
+
+# Recognise colour card colours
 def get_colorcard_colors(color_card, grid_size):
-    """Extract color information from a cropped image of a color card.
-    containing squares of different colors.
-
-    Parameters
-    ----------
-    color_card : ndarray
-        The input cropped image containing only color card.
-    grid_size : list, [horizontal_grid_size, vertical_grid_size]
-        The number of columns and rows in color card.
-
-    Returns
-    -------
-    colors : 3xN ndarray
-        List of colors with color channels go along the first array axis.
-    """
     grid_cols, grid_rows = grid_size
     colors = np.zeros([3, grid_rows * grid_cols])
     sample_size_row = int(0.25 * color_card.shape[0] / grid_rows)
@@ -35,11 +22,10 @@ def get_colorcard_colors(color_card, grid_size):
     return colors
 
 
+# Get RGB
 def get_rgb_from_2darray(array2d):
     random = [0]*24
     i = 0
-
-
     for row in range(4):
         for col in range(6):
             random[i] = array2d[0][i] + array2d[1][i] + array2d[2][i]
@@ -48,6 +34,6 @@ def get_rgb_from_2darray(array2d):
     return (array2d[0][idx], array2d[1][idx], array2d[2][idx])
 
 
+# Get max RGB -i.e. white
 def get_max_rgb(color_card):
     return get_rgb_from_2darray(get_colorcard_colors(color_card, [6, 4]))
-

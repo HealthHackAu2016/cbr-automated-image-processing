@@ -1,4 +1,5 @@
 import image_preparer
+import colour_picking
 import argparse
 import colour_picking
 import cv2
@@ -27,8 +28,15 @@ Proposed Method:
 colour_rect = image_preparer.crop_colours(img)
 image_preparer.image_show("colour", colour_rect)
 
-# Detect scale for image from colour card rectanger
-# rescaled_img = image_preparer.rescale(crop)
+# Get max white colour on colour card
+max_white = colour_picking.get_max_rgb(colour_rect)
+
+# Detect 1px = mm
+pixel_mm = image_preparer.length_per_pixel(colour_rect)
+print(pixel_mm)
+
+# Brighten based on max_white
+# BRIGHTEN
 
 # using CLAHE brightness
 brightness = image_preparer.brightness_auto(img)
@@ -46,8 +54,6 @@ if crop is not None:
 else:
     print("No seed circle detected. Exiting...")
     sys.exit(0)
-
-print(colour_picking.get_max_RGB(img))
 
 canny = cv2.Canny(crop, 100, 300)
 image_preparer.image_show("canny", canny)

@@ -2,7 +2,166 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c9e92cf-5143-4811-9170-ca0d298c7668" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leafsegmentation" afterPath="$PROJECT_DIR$/leafsegmentation" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/100_DSC0247.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/100_DSC0248.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/65_DSC0278.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/75_DSC0301.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/92_DSC0287.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/92_DSC0287_auto_contrast_tone.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/92_DSC0287_auto_contrast_tone_zoom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/Color_correction.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/Detect_colorChecker.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/card.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/card_set1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/card_set2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/card_set3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/card_set4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/colorbalance.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/imutils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/leafsegmentation.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/output/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/output/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/output/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/run_color_correction.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/temp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/test/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/test/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Color Correct/test/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Notes for hackathon.pages" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Project.pages" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/canny.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/colour-picker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/crop.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img_transform.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/leafsegmentation" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/0x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/100x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/10x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/20x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/30x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/40x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/50x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/60x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/70x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/80x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x100.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/90x90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/size.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test-small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/unbrightened.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/colour_picking.py" afterPath="$PROJECT_DIR$/colour_picking.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_preparer.py" afterPath="$PROJECT_DIR$/image_preparer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
@@ -32,10 +191,22 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="614">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colour_picking.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/colour_picking.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,10 +215,11 @@
       <file leaf-file-name="image_preparer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_preparer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="2002">
+              <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
               <folding>
-                <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
               </folding>
             </state>
           </provider>
@@ -74,8 +246,9 @@
         <option value="$PROJECT_DIR$/Color Correct/run_color_correction.py" />
         <option value="$PROJECT_DIR$/Color Correct/Color_correction.py" />
         <option value="$PROJECT_DIR$/Color Correct/colorbalance.py" />
-        <option value="$PROJECT_DIR$/image_preparer.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/image_preparer.py" />
+        <option value="$PROJECT_DIR$/colour_picking.py" />
       </list>
     </option>
   </component>
@@ -148,43 +321,7 @@
       <recent name="C:\Users\willi\Desktop\cbr-automated-image-processing" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.img_transform">
-    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="cbr-automated-image-processing" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="img_transform" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="cbr-automated-image-processing" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/img_transform.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -393,16 +530,6 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.img_transform" />
-    </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.img_transform" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -421,7 +548,7 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1765625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -459,6 +586,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colour_picking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_preparer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
@@ -472,7 +630,8 @@
         <state relative-caret-position="1254">
           <caret line="61" column="102" selection-start-line="61" selection-start-column="102" selection-end-line="61" selection-end-column="102" />
           <folding>
-            <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
@@ -492,7 +651,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
@@ -512,21 +672,14 @@
         <state relative-caret-position="44">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/65_DSC0278.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/92_DSC0287_auto_contrast_tone.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/65_DSC0278.JPG" />
+    <entry file="file://$PROJECT_DIR$/92_DSC0287_auto_contrast_tone.jpg" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -534,112 +687,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leafsegmentation/test_colorbalance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/leafsegmentation/test_colorbalance.py" />
     <entry file="file://$PROJECT_DIR$/length_measure.py" />
-    <entry file="file://$PROJECT_DIR$/leafsegmentation/leafsegmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leafsegmentation/card.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Color Correct/card.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leafsegmentation/colorbalance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="223" column="38" selection-start-line="223" selection-start-column="38" selection-end-line="223" selection-end-column="38" />
-          <folding>
-            <marker date="1430019951000" expanded="true" signature="9741:10052" ph="import ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/leafsegmentation/leafsegmentation.py" />
+    <entry file="file://$PROJECT_DIR$/leafsegmentation/card.jpg" />
+    <entry file="file://$PROJECT_DIR$/Color Correct/card.png" />
+    <entry file="file://$PROJECT_DIR$/leafsegmentation/colorbalance.py" />
+    <entry file="file://$PROJECT_DIR$/Color Correct/card_set1.jpg" />
+    <entry file="file://$PROJECT_DIR$/Color Correct/card_set3.jpg" />
+    <entry file="file://$PROJECT_DIR$/Color Correct/run_color_correction.py" />
+    <entry file="file://$PROJECT_DIR$/Color Correct/Detect_colorChecker.py" />
+    <entry file="file://$PROJECT_DIR$/Color Correct/colorbalance.py" />
+    <entry file="file://$PROJECT_DIR$/Color Correct/Color_correction.py" />
     <entry file="file://$PROJECT_DIR$/img_transform.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Color Correct/card_set1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Color Correct/card_set3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Color Correct/run_color_correction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="90" column="108" selection-start-line="90" selection-start-column="108" selection-end-line="90" selection-end-column="108" />
-          <folding>
-            <element signature="e#25#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Color Correct/Detect_colorChecker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Color Correct/colorbalance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3151">
-          <caret line="292" column="22" selection-start-line="292" selection-start-column="22" selection-end-line="292" selection-end-column="22" />
-          <folding>
-            <marker date="1471924644000" expanded="true" signature="9824:10135" ph="import ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Color Correct/Color_correction.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding>
-            <element signature="e#25#43#0" expanded="false" />
-          </folding>
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image_preparer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="2002">
+          <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
           <folding>
-            <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colour_picking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="614">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

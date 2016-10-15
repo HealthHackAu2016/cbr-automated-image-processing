@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 import imutils
-import shapedetector
 from skimage import io
 
 
@@ -40,17 +39,15 @@ def brightness_auto(img):
 
 def crop_colours(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    ret,thresh = cv2.threshold(gray,60,255,0)
-    contours,contours,hierarchy = cv2.findContours(thresh,1,cv2.CHAIN_APPROX_SIMPLE)
-
+    ret, thresh = cv2.threshold(gray,60,255,0)
+    contours, contours, hierarchy = cv2.findContours(thresh,1,cv2.CHAIN_APPROX_SIMPLE)
     height, width, _ = img.shape
 
+    cropped = None
     for cnt in contours:
-        x,y,w,h = cv2.boundingRect(cnt)
+        x, y, w, h = cv2.boundingRect(cnt)
         if w>150 and h>100 and w<600 and h<400 and x>width/2.5 and y>height/2:
             cropped = img[y:y+h, x:x+w]
-            cv2.imwrite("123.jpg", cropped)
-
     return cropped
 
 
@@ -79,19 +76,12 @@ def crop_seeds(img):
     return cropped
 
 
-def find_brightest_spot(img):
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    image_show("evaev", gray)
-    (minVal, maxVal, minLoc, maxloc) = cv2.minMaxLoc(gray)
-    print(minLoc)
-    print(minVal)
-
-
 # returns in mm
 def length_per_pixel(rectangle_image):
     # length is given to be 3 inches
     length_of_pixel = (3 * 25.4) / rectangle_image.shape[0]
     return length_of_pixel
+
 
 def brighten(img, value):
     # convert to hsv
