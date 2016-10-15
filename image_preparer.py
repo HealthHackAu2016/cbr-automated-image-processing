@@ -1,20 +1,17 @@
 import cv2
 import numpy as np
 
-
 def image_show(title, img):
     cv2.imshow(title, img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     return
 
-
 def brightness_hist(img):
     # get gray-scale copy
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     equ = cv2.equalizeHist(gray)
     return equ
-
 
 def brightness_auto(img):
     # convert into lab
@@ -28,7 +25,6 @@ def brightness_auto(img):
     limg = cv2.merge((cl, a, b))
     # return result
     return cv2.cvtColor(limg, cv2.COLOR_LAB2BGR)
-
 
 def crop_seeds(img):
     # load the image, clone it for output, and then convert it to grayscale
@@ -53,3 +49,22 @@ def crop_seeds(img):
 
     # write cropped img and show the output img
     return cropped
+
+def rescale(img):
+    # gets image and size of current image
+    rectangle = crop_rectange(img)
+    widthr, heightr, channelsr = rectangle.shape
+
+    # can be changed, fixes size of small rectangle
+    r = 200.0 / widthr
+    dim = (200, int(heightr * r))
+
+    # perform the actual resizing of the image and show it
+    resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
+
+    return resized
+
+
+
+
+
