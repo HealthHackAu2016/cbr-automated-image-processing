@@ -37,6 +37,7 @@ def brightness_auto(img):
     # return result
     return cv2.cvtColor(limg, cv2.COLOR_LAB2BGR)
 
+
 def crop_colours(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     ret,thresh = cv2.threshold(gray,60,255,0)
@@ -51,7 +52,6 @@ def crop_colours(img):
             cv2.imwrite("123.jpg", cropped)
 
     return cropped
-
 
 
 def crop_seeds(img):
@@ -78,7 +78,6 @@ def crop_seeds(img):
     # write cropped img and show the output img
     return cropped
 
-<<<<<<< HEAD
 
 def find_brightest_spot(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -86,7 +85,8 @@ def find_brightest_spot(img):
     (minVal, maxVal, minLoc, maxloc) = cv2.minMaxLoc(gray)
     print(minLoc)
     print(minVal)
-=======
+
+
 def rescale(img, fixed_size):
     width, height, channels = img.shape
 
@@ -100,7 +100,6 @@ def rescale(img, fixed_size):
 
     # perform the actual resizing of the image
     resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
-
     return resized
 
 def brighten(img, value):
@@ -111,9 +110,3 @@ def brighten(img, value):
     # reconvert to image
     img = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
     return img
-
-
-
-
-
->>>>>>> 303af3b28c1d2f71cbb677d8115b1a3e7141ce08
