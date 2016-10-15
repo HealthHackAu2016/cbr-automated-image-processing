@@ -1,4 +1,5 @@
 import image_preparer
+import image_segment
 import colour_picking
 import argparse
 import colour_picking
@@ -12,7 +13,7 @@ args = vars(ap.parse_args())
 
 # Read and Show original file
 img = cv2.imread(args["image"])
-image_preparer.image_show("original", img)
+image_preparer.show("original", img)
 
 """
 Proposed Method:
@@ -26,7 +27,7 @@ Proposed Method:
 
 # Cropping the colour card rectangle
 colour_rect = image_preparer.crop_colours(img)
-image_preparer.image_show("colour", colour_rect)
+image_preparer.show("colour", colour_rect)
 
 # Get max white colour on colour card
 max_white = colour_picking.get_max_rgb(colour_rect)
@@ -36,27 +37,31 @@ pixel_mm = image_preparer.length_per_pixel(colour_rect)
 print(pixel_mm)
 
 # Brighten based on max_white
-# BRIGHTEN
+brightness = image_preparer.brighten(img, max_white)
+image_preparer.show("brighten by allen", brightness)
 
 # using CLAHE brightness
-brightness = image_preparer.brightness_auto(img)
-image_preparer.image_show("brightness filter...", brightness)
-
-# histogram equalisation GREYSCALE: proof of concept
-# image_preparer.image_show("hist eq", image_preparer.brightness_hist(brightness))
+brightness = image_preparer.brightness_auto(brightness)
+image_preparer.show("CLAHE brightness filter...", brightness)
 
 # Detect circle and crop
 crop = image_preparer.crop_seeds(brightness)
 if crop is not None:
-    image_preparer.image_show("Circle crop", crop)
-    # Write image
-    # image_preparer.image_write("crop.jpg", crop)
+    image_preparer.show("Circle crop", crop)
 else:
     print("No seed circle detected. Exiting...")
     sys.exit(0)
 
-canny = cv2.Canny(crop, 100, 300)
-image_preparer.image_show("canny", canny)
+# Create copy of crop, apply Otsu and Remove background
+crop_copy = crop.copy()
+bw = image_preparer.black_white(crop_copy)
+image_preparer.show("bw", bw)
+back_removed = image_preparer.remove_background(crop_copy, bw)
+image_preparer.show("back removed", back_removed)
 
+# Sharpen
+# sharpen = image_preparer.sharpen(crop)
+# image_preparer.show("sharpen", sharpen)
 
-
+watershed = image_segment.watershed_looper(back_removed)
+watershed = image_preparer.show("watershed", watershed)

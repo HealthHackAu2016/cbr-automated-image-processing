@@ -4,14 +4,14 @@ import imutils
 from skimage import io
 
 
-def image_show(title, img):
+def show(title, img):
     cv2.imshow(title, img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
     return
 
 
-def image_write(path, img):
+def write(path, img):
     cv2.imwrite(path, img)
     return
 
@@ -83,12 +83,37 @@ def length_per_pixel(rectangle_image):
     return length_of_pixel
 
 
-def brighten(img, value):
-    # convert to hsv
-    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+def brighten(img, max_rgb):
+    # convert original image to BGR HSV
+    convert_colour = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+    red_change = 255 - max_rgb[2]
+    green_change = 255 - max_rgb[1]
+    blue_change = 255 - max_rgb[0]
+
+    difference_in_brightness = 0.2126 * red_change + 0.7152 * green_change + 0.0722 * blue_change
+
     # change each pixel by value
-    hsv[:, :, 2] += value
+    convert_colour[2, :, :] += int(difference_in_brightness)
     # reconvert to image
-    img = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
+    img = cv2.cvtColor(convert_colour, cv2.COLOR_HSV2BGR)
     return img
 
+
+def sharpen(img):
+    kernel = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])
+    sharpened = cv2.filter2D(img, -1, kernel)
+    return sharpened
+
+
+def black_white(img):
+    gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    bw_image = cv2.threshold(gray_image, 80, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+    return bw_image
+
+
+def remove_background(img, bw_image):
+    for i in range(0, img.shape[0]):
+        for j in range (0, img.shape[1]):
+            if np.any(bw_image[i][j] == 255):
+                img[i][j] = [255, 255, 255]
+    return img

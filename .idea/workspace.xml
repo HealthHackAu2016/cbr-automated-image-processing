@@ -2,8 +2,164 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c9e92cf-5143-4811-9170-ca0d298c7668" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/count_me.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image_segment.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CFNetwork-138OC7KWAWKLP.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CFNetwork-138OC7KWAWKLP.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreData-12WKU317DA0GF.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreData-12WKU317DA0GF.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreFoundation-189276ZZUY0GN.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreFoundation-189276ZZUY0GN.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreGraphics-2K9RRCOMDIRP1.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreGraphics-2K9RRCOMDIRP1.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreImage-DIGCTL7JYRCE.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreImage-DIGCTL7JYRCE.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreText-28PMB4BND8XSR.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreText-28PMB4BND8XSR.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreVideo-1E4U9X12GOXWN.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/CoreVideo-1E4U9X12GOXWN.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/Darwin-2D4FZ85F1CBEL.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/Darwin-2D4FZ85F1CBEL.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/Dispatch-2MRO7SOWMPOT1.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/Dispatch-2MRO7SOWMPOT1.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/Foundation-1P26XP5IXR4VQ.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/Foundation-1P26XP5IXR4VQ.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/MachO-3NK5IY1YXV1NO.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/MachO-3NK5IY1YXV1NO.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/ObjectiveC-32Z2E1CQZP613.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/ObjectiveC-32Z2E1CQZP613.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/OpenGLES-2Y5UOQALQVXOX.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/OpenGLES-2Y5UOQALQVXOX.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/QuartzCore-1VTJCRT5TMZHV.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/QuartzCore-1VTJCRT5TMZHV.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/Security-3NE2IC60G7JMZ.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/Security-3NE2IC60G7JMZ.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/UIKit-Y4MTYF6ZEK3T.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/UIKit-Y4MTYF6ZEK3T.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/modules.idx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/os-2D4FZ85F1CBEL.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/2CPUQJA0G9TLJ/os-2D4FZ85F1CBEL.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CFNetwork-VYJNNHSS8W4D.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CFNetwork-VYJNNHSS8W4D.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreData-1HWEOOUTBZE3D.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreData-1HWEOOUTBZE3D.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreFoundation-SDWOWORXRBJW.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreFoundation-SDWOWORXRBJW.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreGraphics-10LIZC6Y65ZED.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreGraphics-10LIZC6Y65ZED.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreImage-2SH6ATKCIKFA0.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreImage-2SH6ATKCIKFA0.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreText-29AYW3IBPUAUF.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreText-29AYW3IBPUAUF.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreVideo-DBKP19ZYGWZY.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/CoreVideo-DBKP19ZYGWZY.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/Darwin-1LVP8K6HYW6R.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/Darwin-1LVP8K6HYW6R.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/Dispatch-2ACIYJQCJ23SG.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/Dispatch-2ACIYJQCJ23SG.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/Foundation-K7W1BMS6PHG4.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/Foundation-K7W1BMS6PHG4.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/MachO-1KJM3GKTGOSFA.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/MachO-1KJM3GKTGOSFA.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/ObjectiveC-JRA7UFEC52Z6.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/ObjectiveC-JRA7UFEC52Z6.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/OpenGLES-3GRYW0EIUU9BG.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/OpenGLES-3GRYW0EIUU9BG.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/QuartzCore-L2YJKFXYDTYS.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/QuartzCore-L2YJKFXYDTYS.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/Security-3O4X5JM6QL3WZ.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/Security-3O4X5JM6QL3WZ.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/UIKit-1MCEWB5GAZIR1.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/UIKit-1MCEWB5GAZIR1.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/modules.idx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/os-1LVP8K6HYW6R.pcm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/S4KY7IX40X3C/os-1LVP8K6HYW6R.pcm.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/Session.modulevalidation" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/ModuleCache/modules.timestamp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Base.lproj/LaunchScreen.storyboardc/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Base.lproj/Main.storyboardc/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/LaunchScreen-SBPartialInfo.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Main-SBPartialInfo.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/AppDelegate.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/AppDelegate.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/AppDelegate.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/ViewController.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/ViewController.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/ViewController.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/ViewController2.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/ViewController2.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/ViewController2.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/main.d" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/main.dia" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/main.o" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/test.LinkFileList" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/Objects-normal/x86_64/test_dependency_info.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/assetcatalog_dependencies" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/assetcatalog_generated_info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/dgph" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/test-all-non-framework-target-headers.hmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/test-all-target-headers.hmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/test-generated-files.hmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/test-own-target-headers.hmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/test-project-headers.hmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Intermediates/test.build/Debug-iphonesimulator/test.build/test.hmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/Base.lproj/LaunchScreen.storyboardc/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/Base.lproj/Main.storyboardc/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/File.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/PkgInfo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/test.momd/VersionInfo.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/test.momd/test.mom" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Build/Products/Debug-iphonesimulator/test.app/test.momd/test.omo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Index/Debug/iphonesimulator9.3-x86_64/test.xcindex/db.xcindexdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Index/Debug/iphonesimulator9.3-x86_64/test.xcindex/db.xcindexdb-shm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Index/Debug/iphonesimulator9.3-x86_64/test.xcindex/db.xcindexdb-wal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Index/Debug/iphonesimulator9.3-x86_64/test.xcindex/db.xcindexdb.strings-cmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Index/Debug/iphonesimulator9.3-x86_64/test.xcindex/db.xcindexdb.strings-dir" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Index/Debug/iphonesimulator9.3-x86_64/test.xcindex/db.xcindexdb.strings-file" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Index/Debug/iphonesimulator9.3-x86_64/test.xcindex/db.xcindexdb.strings-moduleurl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Index/Debug/iphonesimulator9.3-x86_64/test.xcindex/db.xcindexdb.strings-res" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Index/Debug/iphonesimulator9.3-x86_64/test.xcindex/db.xcindexdb.strings-sym" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Logs/Build/84D8EC54-56F0-4634-8542-F4F6B1AE271D.xcactivitylog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Logs/Build/Cache.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Logs/Issues/Cache.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/Logs/Issues/D6DC406C-DD53-470E-BCC3-B8593769BF9B.xcactivitylog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/TextIndex/text-filter.idx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/DerivedData/test/scm.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test.xcodeproj/project.xcworkspace/xcuserdata/Tom.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test.xcodeproj/xcuserdata/Tom.xcuserdatad/xcschemes/test.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test.xcodeproj/xcuserdata/Tom.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/AppDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/AppDelegate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/Base.lproj/LaunchScreen.storyboard" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/Base.lproj/Main.storyboard" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/ViewController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/ViewController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/ViewController2.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/ViewController2.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/main.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/setup.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/test.xcdatamodeld/.xccurrentversion" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test/test.xcdatamodeld/test.xcdatamodel/contents" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/colour_picking.py" afterPath="$PROJECT_DIR$/colour_picking.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_preparer.py" afterPath="$PROJECT_DIR$/image_preparer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <ignored path="cbr-automated-image-processing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,32 +187,10 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="746">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="colour_picking.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/colour_picking.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,12 +199,34 @@
       <file leaf-file-name="image_preparer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_preparer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2002">
-              <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+            <state relative-caret-position="64">
+              <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
+                <marker date="1476521342047" expanded="true" signature="0:29" ph="import ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image_segment.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/image_segment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="594">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="count_me.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/count_me.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,10 +252,15 @@
         <option value="$PROJECT_DIR$/Color Correct/run_color_correction.py" />
         <option value="$PROJECT_DIR$/Color Correct/Color_correction.py" />
         <option value="$PROJECT_DIR$/Color Correct/colorbalance.py" />
-        <option value="$PROJECT_DIR$/image_preparer.py" />
-        <option value="$PROJECT_DIR$/colour_picking.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/colour_picking.py" />
+        <option value="$PROJECT_DIR$/count_me.py" />
+        <option value="$PROJECT_DIR$/watershed.py" />
+        <option value="$PROJECT_DIR$/water_sheed.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/image_preparer.py" />
+        <option value="$PROJECT_DIR$/image_segment.py" />
       </list>
     </option>
   </component>
@@ -165,11 +326,11 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\willi\Desktop\cbr-automated-image-processing\Color Correct" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\willi\Desktop\cbr-automated-image-processing" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\willi\Desktop\cbr-automated-image-processing\Color Correct" />
     </key>
   </component>
   <component name="RunManager">
@@ -399,14 +560,14 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -450,7 +611,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -461,7 +622,7 @@
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
+            <marker date="1476521342047" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
@@ -482,7 +643,7 @@
           <caret line="61" column="102" selection-start-line="61" selection-start-column="102" selection-end-line="61" selection-end-column="102" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
+            <marker date="1476521342047" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
@@ -503,7 +664,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
+            <marker date="1476521342047" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
@@ -524,7 +685,7 @@
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
+            <marker date="1476521342047" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
@@ -558,42 +719,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_preparer.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2002">
-          <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <marker date="1476507789074" expanded="true" signature="0:29" ph="import ..." />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/colour_picking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="792">
+          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/count_me.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/water_sheed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1-small.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        <state relative-caret-position="746">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/image_preparer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="64">
+          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1476521342047" expanded="true" signature="0:29" ph="import ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_segment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

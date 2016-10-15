@@ -34,6 +34,6 @@ def get_rgb_from_2darray(array2d):
     return (array2d[0][idx], array2d[1][idx], array2d[2][idx])
 
 
-# Get max RGB -i.e. white
+# Get max RGB - i.e. white
 def get_max_rgb(color_card):
     return get_rgb_from_2darray(get_colorcard_colors(color_card, [6, 4]))
