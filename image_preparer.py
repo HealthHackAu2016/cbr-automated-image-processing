@@ -51,7 +51,6 @@ def crop_colours(img):
 
 def crop_seeds(img):
     # load the image, clone it for output, and then convert it to grayscale
-    output = img.copy()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # detect circles in the img
     circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 2, 200, param1=300, param2=500, minRadius=200)
@@ -97,18 +96,21 @@ def brighten(img, max_rgb):
 
 
 def sharpen(img):
+    # sharpen that doesn't work?
     kernel = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])
     sharpened = cv2.filter2D(img, -1, kernel)
     return sharpened
 
 
 def black_white(img):
+    # Binary and Otsu filter to remove noise for background_removal
     gray_image = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     bw_image = cv2.threshold(gray_image, 80, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
     return bw_image
 
 
 def remove_background(img, bw_image):
+    # Remove background from image
     for i in range(0, img.shape[0]):
         for j in range (0, img.shape[1]):
             if np.any(bw_image[i][j] == 255):
@@ -117,16 +119,16 @@ def remove_background(img, bw_image):
 
 
 def outline(img):
+    # Get width and height of image and create copy
     width = img.shape[0]
     height = img.shape[1]
-
     copy = img.copy()
-
+    # Go through whole shape, draw outline as appropriate
     for i in range(1, width-1):
         for j in range(1, height-1):
-            if np.any(img[i][j] == 255) :
+            # Ignore if just white, recall background has already been removed here
+            if np.any(img[i][j] == 255):
                 continue
-
             aboveX = i
             aboveY = j - 1
             rightX = i + 1
@@ -135,22 +137,21 @@ def outline(img):
             belowY = j + 1
             leftX = i - 1
             leftY = j
-
-            if (boundary(img[aboveX][aboveY], img[rightX][rightY], img[belowX][belowY], img[leftX][leftY])):
+            if boundary(img[aboveX][aboveY], img[rightX][rightY], img[belowX][belowY], img[leftX][leftY]):
                 copy[i][j] = [0, 0, 255]
-
     return copy
 
 
 def boundary(tup1, tup2, tup3, tup4):
-    if (np.any(tup1 == 255) and np.any(tup2 == 255) and np.any(tup3 == 255) and np.any(tup4 == 255)):
+    if np.any(tup1 == 255) and np.any(tup2 == 255) and np.any(tup3 == 255) and np.any(tup4 == 255):
         return False
-    if (np.any(tup1 != 255) and np.any(tup2 != 255) and np.any(tup3 != 255) and np.any(tup4 != 255)):
+    if np.any(tup1 != 255) and np.any(tup2 != 255) and np.any(tup3 != 255) and np.any(tup4 != 255):
         return False
     return True
 
 
 def remove_edge(array):
+    # remove edges
     mod_array = array.copy()
     width = array.shape[0]
     height = array.shape[1]
@@ -171,15 +172,22 @@ def remove_edge(array):
 
 
 def initialise_white_array(size):
-    array = [[[255, 255, 255] for i in range(size)] for j in range(size)];
-    print("test")
-    show("white array", array)
+    # declare white array
+    array = np.zeros((size, size, 3), dtype=np.uint8)
+    array[:, :] = [255, 255, 255]
     return array
 
 
 # segmented_img has some size, x, y tracks where it has searched. Set 2 pixels in edge to ignore hard coding
 def get_segment_image(original_img, segmented_img, x, y, x2, y2):
-    if (np.any(original_img[x][y]) != 255):
+    if x > original_img.shape[0] - 2:
+        return
+    if y > original_img.shape[1] - 2:
+        return
+
+    print(str(x)+", "+str(y))
+
+    if np.any(original_img[x][y]) != 255:
         segmented_img[x2][y2] = original_img[x][y]
         original_img[x][y] = [255, 255, 255]
 
@@ -188,4 +196,4 @@ def get_segment_image(original_img, segmented_img, x, y, x2, y2):
         get_segment_image(original_img, segmented_img, x, y + 1, x2, y2 + 1)
         get_segment_image(original_img, segmented_img, x, y - 1, x2, y2 - 1)
 
-    return
+    return segmented_img

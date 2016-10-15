@@ -1,4 +1,3 @@
-import cv2
 import numpy as np
 
 
@@ -31,7 +30,7 @@ def get_rgb_from_2darray(array2d):
             random[i] = array2d[0][i] + array2d[1][i] + array2d[2][i]
             i += 1
     idx = random.index(np.amax(random))
-    return (array2d[0][idx], array2d[1][idx], array2d[2][idx])
+    return array2d[0][idx], array2d[1][idx], array2d[2][idx]
 
 
 # Get max RGB - i.e. white
