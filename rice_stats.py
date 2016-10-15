@@ -4,6 +4,37 @@ import argparse
 import image_preparer
 from scipy.ndimage import interpolation
 
+def widthAndHeight(img, precision):
+	maxWidth = 0
+	finalHeight = 0
+
+	for a in range(0,precision):
+		rotated = interpolation.rotate(img,(180/precision)*a)
+		gray = cv2.cvtColor(rotated, cv2.COLOR_BGR2GRAY)
+		_,thresh2 = cv2.threshold(gray,80,255,cv2.THRESH_BINARY)
+		contours,contours,hierarchy = cv2.findContours(thresh,1,cv2.CHAIN_APPROX_SIMPLE)
+		_,_,w,h = cv2.boundingRect(contours[0])
+		print(w)
+		if w>maxWidth:
+			print(w)
+			maxWidth = w
+			finalHeight = h
+
+	return (maxWidth,finalHeight)
+
+def maxLength(img):
+	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	_,thresh = cv2.threshold(gray,80,255,cv2.THRESH_BINARY)
+	contours,contours,hierarchy = cv2.findContours(thresh,1,cv2.CHAIN_APPROX_SIMPLE)
+	centre,radius = cv2.minEnclosingCircle(contours[0])
+	return 2*radius
+
+def area (img):
+	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+	_,thresh = cv2.threshold(gray,80,255,cv2.THRESH_BINARY)
+	contours,contours,hierarchy = cv2.findContours(thresh,1,cv2.CHAIN_APPROX_SIMPLE)
+	return cv2.contourArea(contours[0])
+
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, help="Path to the image")
 args = vars(ap.parse_args())
@@ -34,10 +65,10 @@ image_preparer.image_show("Title",img)
 maxWidth = 0
 finalHeight = 0
 
-for a in range(0,20):
-	rotated = interpolation.rotate(img,9*a)
+for a in range(0,180):
+	rotated = interpolation.rotate(img,(180/180)*a)
 	gray2 = cv2.cvtColor(rotated, cv2.COLOR_BGR2GRAY)
-	_,thresh2 = cv2.threshold(gray2,127,255,cv2.THRESH_BINARY)
+	_,thresh2 = cv2.threshold(gray2,80,255,cv2.THRESH_BINARY)
 	contours2,contours2,hierarchy2 = cv2.findContours(thresh2,1,cv2.CHAIN_APPROX_SIMPLE)
 	x,y,w,h = cv2.boundingRect(contours2[0])
 	print(w)
@@ -47,10 +78,11 @@ for a in range(0,20):
 		finalHeight = h
 print(maxWidth)
 print(finalHeight)
+
 # cv2.rectangle(img,(),(),(0,255,0),3)
 
 
-# rotated = interpolation.rotate(img,2*30)
+# rotated = interpolation.rotate(img1,2*30)
 # gray2 = cv2.cvtColor(rotated, cv2.COLOR_BGR2GRAY)
 # _,thresh2 = cv2.threshold(gray,127,255,cv2.THRESH_BINARY)
 # contours2,contours2,hierarchy2 = cv2.findContours(thresh2,1,cv2.CHAIN_APPROX_SIMPLE)
@@ -64,6 +96,5 @@ print(finalHeight)
 
 image_preparer.image_show("Title2",rotated)
 
-
-
-
+print(area(img))
+print(maxLength(img))
