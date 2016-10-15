@@ -27,12 +27,15 @@ Proposed Method:
 colour_rect = image_preparer.crop_colours(img)
 image_preparer.image_show("colour", colour_rect)
 
-# Detect scale for image from colour card rectanger
-# rescaled_img = image_preparer.rescale(crop)
+# Get max white colour on colour card
+max_white = colour_picking.get_max_rgb(colour_rect)
 
-# Get white colour on colour card
-#maxWhite = colour_picking.get_max_rgb(colour_rect)
-#print(maxWhite)
+# Detect 1px = mm
+pixel_mm = image_preparer.length_per_pixel(colour_rect)
+print(pixel_mm)
+
+# Brighten based on max_white
+# BRIGHTEN
 
 # using CLAHE brightness
 brightness = image_preparer.brightness_auto(img)

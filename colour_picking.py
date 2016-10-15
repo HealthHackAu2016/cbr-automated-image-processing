@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 
 
+# Recognise colour card colours
 def get_colorcard_colors(color_card, grid_size):
     grid_cols, grid_rows = grid_size
     colors = np.zeros([3, grid_rows * grid_cols])
@@ -21,13 +22,18 @@ def get_colorcard_colors(color_card, grid_size):
     return colors
 
 
-def get_brightest_rgb(array2d):
-    random = [24]
+# Get RGB
+def get_rgb_from_2darray(array2d):
+    random = [0]*24
     i = 0
     for row in range(4):
         for col in range(6):
             random[i] = array2d[0][i] + array2d[1][i] + array2d[2][i]
             i += 1
-    np.amax(random)
-    return
+    idx = random.index(np.amax(random))
+    return (array2d[0][idx], array2d[1][idx], array2d[2][idx])
 
+
+# Get max RGB -i.e. white
+def get_max_rgb(color_card):
+    return get_rgb_from_2darray(get_colorcard_colors(color_card, [6, 4]))
