@@ -4,6 +4,8 @@ import argparse
 import image_preparer
 from scipy.ndimage import interpolation
 
+
+
 def imageFromContour(cnt):
 	x,y,w,h = cv2.boundingRect(cnt)
 	img = np.zeros([y+h+20,x+w+20,3],dtype=np.uint8)
@@ -106,5 +108,5 @@ image_preparer.image_show("Title",img)
 # print(maxLength(img))
 # -------------------------------------------------
 
-for cnt in contours:
-	image_preparer.image_show("Title3", imageFromContour(cnt))
+# for cnt in contours:
+# 	image_preparer.image_show("Title3", imageFromContour(cnt))

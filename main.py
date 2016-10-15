@@ -4,6 +4,7 @@ import argparse
 import colour_picking
 import cv2
 import sys
+import pandas
 
 # Parse Arguments
 ap = argparse.ArgumentParser()
@@ -57,6 +58,15 @@ else:
 
 canny = cv2.Canny(crop, 100, 300)
 image_preparer.image_show("canny", canny)
+
+
+array = [[]]
+for cnt in contours:
+    row = rice_stats.widthAndHeight(rice_stats.imageFromContour(cnt),20)
+    array.append(row)
+table = pd.DataFrame(array,columns=["Length","Width"])
+
+#plot graph
 
 
 
