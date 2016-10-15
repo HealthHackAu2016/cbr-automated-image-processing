@@ -24,3 +24,7 @@ if crop is not None:
 
 canny = cv2.Canny(crop, 200, 600)
 image_preparer.image_show("canny", canny)
+
+# Cropping the colour card rectangle
+colourRect = image_preparer.crop_colours(img)
+image_preparer.image_show("colour", colourRect)
