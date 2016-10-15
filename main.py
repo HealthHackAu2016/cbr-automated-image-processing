@@ -15,6 +15,7 @@ image_preparer.image_show("brightness filter...", brightness)
 # histogram equalisation
 image_preparer.image_show("hist eq", image_preparer.brightness_hist(brightness))
 
+
 # Cropping for circle
 crop = image_preparer.crop_seeds(brightness)
 if crop is not None:
@@ -23,3 +24,6 @@ if crop is not None:
 canny = cv2.Canny(crop, 100, 300)
 image_preparer.image_show("canny", canny)
 
+# Cropping the colour card rectangle
+colourRect = image_preparer.crop_colours(img)
+image_preparer.image_show("colour", colourRect)
