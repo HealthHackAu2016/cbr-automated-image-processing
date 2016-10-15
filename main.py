@@ -1,12 +1,16 @@
 import image_preparer
 import argparse
 import cv2
+import sys
 
+# Parse Arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, help="Path to the image")
 args = vars(ap.parse_args())
 
+# Read and Show original file
 img = cv2.imread(args["image"])
+image_preparer.image_show("original", img)
 
 """
 Proposed Method:
@@ -18,28 +22,32 @@ Proposed Method:
     6. Profit?
 """
 
+# Cropping the colour card rectangle
+colour_rect = image_preparer.crop_colours(img)
+image_preparer.image_show("colour", colour_rect)
+
+# Detect scale for image from colour card rectanger
+# rescaled_img = image_preparer.rescale(crop)
+
 # using CLAHE brightness
 brightness = image_preparer.brightness_auto(img)
 image_preparer.image_show("brightness filter...", brightness)
 
-# histogram equalisation
-image_preparer.image_show("hist eq", image_preparer.brightness_hist(brightness))
+# histogram equalisation GREYSCALE: proof of concept
+# image_preparer.image_show("hist eq", image_preparer.brightness_hist(brightness))
 
-# Cropping for circle
+# Detect circle and crop
 crop = image_preparer.crop_seeds(brightness)
 if crop is not None:
     image_preparer.image_show("Circle crop", crop)
+    # Write image
+    # image_preparer.image_write("crop.jpg", crop)
 else:
-    print("No seed circle detected")
+    print("No seed circle detected. Exiting...")
+    sys.exit(0)
 
-image_preparer.image_write("crop.jpg", crop)
 
 canny = cv2.Canny(crop, 100, 300)
-
-image_preparer.image_write("canny.jpg", canny)
 image_preparer.image_show("canny", canny)
 
 
-# Cropping the colour card rectangle
-colourRect = image_preparer.crop_colours(img)
-image_preparer.image_show("colour", colourRect)

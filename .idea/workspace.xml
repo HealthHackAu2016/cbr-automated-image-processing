@@ -4,6 +4,7 @@
     <list default="true" id="9c9e92cf-5143-4811-9170-ca0d298c7668" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leafsegmentation" afterPath="$PROJECT_DIR$/leafsegmentation" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_preparer.py" afterPath="$PROJECT_DIR$/image_preparer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <ignored path="cbr-automated-image-processing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="680">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -40,13 +41,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image_preparer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="image_preparer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/image_preparer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="101" column="64" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
+            <state relative-caret-position="532">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
-                <marker date="1476504497642" expanded="true" signature="0:29" ph="import ..." />
+                <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
               </folding>
             </state>
           </provider>
@@ -73,8 +74,8 @@
         <option value="$PROJECT_DIR$/Color Correct/run_color_correction.py" />
         <option value="$PROJECT_DIR$/Color Correct/Color_correction.py" />
         <option value="$PROJECT_DIR$/Color Correct/colorbalance.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/image_preparer.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -471,7 +472,7 @@
         <state relative-caret-position="1254">
           <caret line="61" column="102" selection-start-line="61" selection-start-column="102" selection-end-line="61" selection-end-column="102" />
           <folding>
-            <marker date="1476504497642" expanded="true" signature="0:29" ph="import ..." />
+            <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
@@ -491,7 +492,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1476504497642" expanded="true" signature="0:29" ph="import ..." />
+            <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
@@ -511,7 +512,7 @@
         <state relative-caret-position="44">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <marker date="1476504497642" expanded="true" signature="0:29" ph="import ..." />
+            <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
@@ -625,22 +626,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/image_preparer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="746">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="532">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1476505055478" expanded="true" signature="0:29" ph="import ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_preparer.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="101" column="64" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
+        <state relative-caret-position="680">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
-            <marker date="1476504497642" expanded="true" signature="0:29" ph="import ..." />
+            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>

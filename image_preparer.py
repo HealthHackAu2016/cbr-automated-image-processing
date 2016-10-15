@@ -102,6 +102,7 @@ def rescale(img, fixed_size):
     resized = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
     return resized
 
+
 def brighten(img, value):
     # convert to hsv
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
