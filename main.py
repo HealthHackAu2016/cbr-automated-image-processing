@@ -59,9 +59,12 @@ image_preparer.show("bw", bw)
 back_removed = image_preparer.remove_background(crop_copy, bw)
 image_preparer.show("back removed", back_removed)
 
+outlined = image_preparer.outline(back_removed)
+image_preparer.show("outlined", outlined)
+
 # Sharpen
 # sharpen = image_preparer.sharpen(crop)
 # image_preparer.show("sharpen", sharpen)
 
-watershed = image_segment.watershed_looper(back_removed)
+watershed = image_segment.watershed_looper(outlined)
 watershed = image_preparer.show("watershed", watershed)
