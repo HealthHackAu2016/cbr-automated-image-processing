@@ -1,16 +1,10 @@
 import image_preparer
 import argparse
 import cv2
-from sklearn import random_projection
+import numpy as np
+from matplotlib import pyplot as plt
 
-
-image_preparer.crop_seeds
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", required=True, help="Path to the image")
-args = vars(ap.parse_args())
-
-origin = args["image"]
-image_preparer.crop_seeds(origin)
-
-crop = cv2.imread("crop.jpg")
-image_preparer.show_img("poo", crop)
+img = cv2.imread('92_DSC0287_auto_contrast_tone_zoom.jpg')
+gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+ret, thresh = cv2.threshold(gray,0,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
+cv2.imshow('image',img)
