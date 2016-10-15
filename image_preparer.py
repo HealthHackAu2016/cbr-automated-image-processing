@@ -53,3 +53,18 @@ def crop_seeds(img):
 
     # write cropped img and show the output img
     return cropped
+
+
+# Detecting the brightest colour in a given image
+def find_brightest_spot(img):
+    print([img[0]])
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    (minVal, maxVal, minLoc, maxLoc) = cv2.minMaxLoc(gray)
+    print(maxVal)
+    print(maxLoc)
+    print(maxLoc[0])
+    print(img)
+    # print (img[maxLoc[0]][maxLoc[1]][1])
+    return #(img[maxLoc[0]][maxLoc[1]][0], img[maxLoc[0]][maxLoc[1]][1], img[maxLoc[0]][maxLoc[1]][2])
+
+

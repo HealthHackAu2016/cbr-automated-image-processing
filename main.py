@@ -1,4 +1,5 @@
 import image_preparer
+import colour_picking
 import argparse
 import cv2
 
@@ -8,6 +9,7 @@ args = vars(ap.parse_args())
 
 img = cv2.imread(args["image"])
 
+'''
 # using CLAHE
 brightness = image_preparer.brightness_auto(img)
 image_preparer.image_show("brightness filter...", brightness)
@@ -23,3 +25,19 @@ if crop is not None:
 
 canny = cv2.Canny(crop, 100, 300)
 image_preparer.image_show("canny", canny)
+'''
+
+print(colour_picking.get_max_rgb(img))
+
+numrows = len(img)
+numcols = len(img[0])
+
+for i in range(numcols):
+    for j in range(numcols):
+        print(img[i][j])
+
+
+image_preparer.image_show("reduced", img)
+
+
+
