@@ -1,10 +1,10 @@
 import image_preparer
 import image_segment
-import colour_picking
 import argparse
 import colour_picking
 import cv2
 import sys
+
 
 # Parse Arguments
 ap = argparse.ArgumentParser()
@@ -62,9 +62,19 @@ image_preparer.show("back removed", back_removed)
 outlined = image_preparer.outline(back_removed)
 image_preparer.show("outlined", outlined)
 
+
 # Sharpen
 # sharpen = image_preparer.sharpen(crop)
 # image_preparer.show("sharpen", sharpen)
 
+
 watershed = image_segment.watershed_looper(outlined)
 watershed = image_preparer.show("watershed", watershed)
+
+"""
+array = [[]]
+for cnt in contours:
+    row = rice_stats.widthAndHeight(rice_stats.imageFromContour(cnt),20)
+    array.append(row)
+table = pd.DataFrame(array,columns=["Length","Width"])
+"""

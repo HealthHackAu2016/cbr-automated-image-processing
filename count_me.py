@@ -1,3 +1,7 @@
+import cv2
+import numpy as np
+
+
 def count_seeds1(croplocation):
     # setting up
     image = cv2.imread(croplocation, 0)
@@ -26,38 +30,6 @@ def count_seeds1(croplocation):
                 ricecount += oldlinecount - linecount
             oldlinecount = linecount
     return ricecount
-
-
-def count_seeds2(croplocation):
-    # using watershed algorithm
-    image = cv2.imread(croplocation)
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-    # Invert and apply Otsu threshold filter
-    ret, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
-
-    # noise removal and sure background area
-    kernel = np.ones((3,3), np.uint8)
-    opening = cv2.morphologyEx(thresh, cv2.MORPH_OPEN, kernel, iterations=2)
-    sure_bg = cv2.dilate(opening, kernel, iterations=3)
-
-    # find sure foreground area and unknown region
-    dist_transform = cv2.distanceTransform(opening, cv2.DIST_L2, 5)
-    ret, sure_fg = cv2.threshold(dist_transform, 0.7*dist_transform.max(), 255, 0)
-    sure_fg = np.uint8(sure_fg)
-    unknown = cv2.subtract(sure_bg, sure_fg)
-
-    # marker labelling, add labels, mark region
-    ret, markers = cv2.connectedComponents(sure_fg)
-    markers += 1
-    markers[unknown == 255] = 0
-
-    # apply watershed
-    markers = cv2.watershed(image, markers)
-    image[markers == -1] = [0, 0, 255]
-
-    show_img("watershed filter", image)
-    return
 
 
 def count_seeds3(croplocation):
