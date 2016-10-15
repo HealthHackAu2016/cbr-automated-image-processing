@@ -34,6 +34,7 @@ def get_colorcard_colors(color_card, grid_size):
 
     return colors
 
+
 def get_rgb_from_2darray(array2d):
     random = [0]*24
     i = 0
