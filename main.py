@@ -1,5 +1,6 @@
 import image_preparer
 import argparse
+import colour_picking
 import cv2
 import sys
 
@@ -46,8 +47,10 @@ else:
     print("No seed circle detected. Exiting...")
     sys.exit(0)
 
+print(colour_picking.get_max_RGB(img))
 
 canny = cv2.Canny(crop, 100, 300)
 image_preparer.image_show("canny", canny)
+
 
 
