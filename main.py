@@ -65,7 +65,7 @@ warray = []
 larray = []
 for img in images:
     if (area(img)/(pixel_mm*pixel_mm))<=30:
-        (w,l) = rice_stats.widthAndHeight(rice_stats.imageFromContour(cnt),20)
+        (w,l) = rice_stats.widthAndHeight(img,20)
         warray.append(w/pixel_mm)
         larray.append(l/pixel_mm)
 data = [larray, warray]    
