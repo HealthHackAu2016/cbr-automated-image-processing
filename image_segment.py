@@ -1,6 +1,5 @@
 import numpy as np
 import cv2
-from matplotlib import pyplot as plt
 
 
 def watershed(img):
@@ -33,7 +32,7 @@ def watershed(img):
 
     # WATERSHED
     markers = cv2.watershed(img, markers)
-    img[markers == -1] = [0, 255, 0]
+    img[markers == -1] = [0, 0, 255]
     return img
 
 

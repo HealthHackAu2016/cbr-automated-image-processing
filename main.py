@@ -1,5 +1,5 @@
 import image_preparer
-# import image_segment
+import image_segment
 import numpy as np
 import stats
 import os
@@ -106,6 +106,10 @@ try:
     image_preparer.show("removed edge", removed_edge)
     image_preparer.write("results/9-removed-edges.jpg", removed_edge)
 
+    watershed = image_segment.watershed_looper(removed_edge)
+    image_preparer.show("just watershed with removed edge", watershed)
+    image_preparer.write("results/10-watershed.jpg", watershed)
+
     test = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 5, 7, 3, 4], [8, 2, 4, 6, 4, 2, 1, 3, 10, 3, 4, 5, 2]]
     stats.create_hist(test)
 
@@ -129,8 +133,7 @@ try:
     # Sharpen
     # sharpen = image_preparer.sharpen(crop)
     image_preparer.show("sharpen", sharpen)
-    watershed = image_segment.watershed_looper(outlined)
-    watershed = image_preparer.show("watershed", watershed)
+
 
     array = [[]]
     for cnt in contours:
