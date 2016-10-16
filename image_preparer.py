@@ -181,22 +181,16 @@ def initialise_white_array(size):
 
 # segmented_img has some size, x, y tracks where it has searched. Set 2 pixels in edge to ignore hard coding
 def get_segment_image(original_img, segmented_img, x, y):
-    if x > original_img.shape[0] - 2:
-        return
-    if y > original_img.shape[1] - 2:
-        return
-
-    print(str(x)+", "+str(y))
-
     if original_img[x][y][0] != 255:
         segmented_img[x][y] = original_img[x][y]
         original_img[x][y] = [255, 255, 255]
+
+        if original_img[x][y + 1][0] != 255:
+            get_segment_image(original_img, segmented_img, x, y + 1)
 
         if original_img[x+1][y][0] != 255:
             get_segment_image(original_img, segmented_img, x , y)
 
         if original_img[x-1][y][0] != 255:
             get_segment_image(original_img, segmented_img, x - 1, y)
-
-        if original_img[x][y+1][0] != 255:
-            get_segment_image(original_img, segmented_img, x, y + 1)
+    return
