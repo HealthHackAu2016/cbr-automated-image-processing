@@ -92,10 +92,10 @@ count = 0
 
 for i in range(2, width-2):
     for j in range(2, height-2):
-        if (np.any(removed_edge[i][j]) != 255):
+        if (removed_edge[i][j][0] != 255):
             new_array = image_preparer.initialise_white_array(1500)
             # image_preparer.show("test", new_array)
-            tester = image_preparer.get_segment_image(removed_edge, new_array, i, j, i, j)
+            tester = image_preparer.get_segment_image(removed_edge, new_array, i, j)
             image_preparer.show("seed crop", tester)
             # FIXME save the 2d array into an image or array, using count
             count += 1

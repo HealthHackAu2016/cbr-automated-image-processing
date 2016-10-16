@@ -175,11 +175,12 @@ def initialise_white_array(size):
     # declare white array
     array = np.zeros((size, size, 3), dtype=np.uint8)
     array[:, :] = [255, 255, 255]
+
     return array
 
 
 # segmented_img has some size, x, y tracks where it has searched. Set 2 pixels in edge to ignore hard coding
-def get_segment_image(original_img, segmented_img, x, y, x2, y2):
+def get_segment_image(original_img, segmented_img, x, y):
     if x > original_img.shape[0] - 2:
         return
     if y > original_img.shape[1] - 2:
@@ -187,13 +188,15 @@ def get_segment_image(original_img, segmented_img, x, y, x2, y2):
 
     print(str(x)+", "+str(y))
 
-    if np.any(original_img[x][y]) != 255:
-        segmented_img[x2][y2] = original_img[x][y]
+    if original_img[x][y][0] != 255:
+        segmented_img[x][y] = original_img[x][y]
         original_img[x][y] = [255, 255, 255]
 
-        get_segment_image(original_img, segmented_img, x + 1, y, x2 + 1, y2)
-        get_segment_image(original_img, segmented_img, x - 1, y, x2 - 1, y2)
-        get_segment_image(original_img, segmented_img, x, y + 1, x2, y2 + 1)
-        get_segment_image(original_img, segmented_img, x, y - 1, x2, y2 - 1)
+        if original_img[x+1][y][0] != 255:
+            get_segment_image(original_img, segmented_img, x , y)
 
-    return segmented_img
+        if original_img[x-1][y][0] != 255:
+            get_segment_image(original_img, segmented_img, x - 1, y)
+
+        if original_img[x][y+1][0] != 255:
+            get_segment_image(original_img, segmented_img, x, y + 1)
