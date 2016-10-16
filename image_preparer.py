@@ -175,7 +175,6 @@ def initialise_white_array(size):
     # declare white array
     array = np.zeros((size, size, 3), dtype=np.uint8)
     array[:, :] = [255, 255, 255]
-
     return array
 
 
@@ -183,13 +182,12 @@ def initialise_white_array(size):
 def get_segment_image(original_img, segmented_img, x, y):
     if original_img[x][y][0] != 255:
         segmented_img[x][y] = original_img[x][y]
-        original_img[x][y] = [255, 255, 255]
 
         if original_img[x][y + 1][0] != 255:
             get_segment_image(original_img, segmented_img, x, y + 1)
 
         if original_img[x+1][y][0] != 255:
-            get_segment_image(original_img, segmented_img, x , y)
+            get_segment_image(original_img, segmented_img, x + 1, y)
 
         if original_img[x-1][y][0] != 255:
             get_segment_image(original_img, segmented_img, x - 1, y)
