@@ -1,0 +1,18 @@
+Hi,
+
+please drop here any photo you want for your part of the pitch. You will be given 1 slide and 50 seconds of speak time.
+
+we have
+
+1) reading in the photo
+2) detecting the color checker
+3) rescale the image
+4) "color correct"
+5) segment the seeds
+6) identify the individuals
+7) measure lenght, with, color, texture
+8) output summary statistics (e.g., histograms of legths and widths)
+9) surprise (we can acquire the phots via a phone, here is a demonstration)
+
+----
+
