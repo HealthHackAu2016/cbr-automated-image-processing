@@ -32,7 +32,7 @@ def watershed(img):
 
     # WATERSHED
     markers = cv2.watershed(img, markers)
-    img[markers == -1] = [0, 0, 255]
+    img[markers == -1] = [0, 255, 0]
     return img
 
 

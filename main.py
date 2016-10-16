@@ -1,6 +1,5 @@
 import image_preparer
 import image_segment
-import numpy as np
 import stats
 import os
 import argparse
