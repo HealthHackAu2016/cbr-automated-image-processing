@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-import imutils
 from skimage import io
 
 
@@ -91,4 +90,3 @@ def brighten(img, value):
     # reconvert to image
     img = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
     return img
-

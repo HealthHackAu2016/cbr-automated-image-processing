@@ -4,8 +4,6 @@ import argparse
 import image_preparer
 from scipy.ndimage import interpolation
 
-
-
 def imageFromContour(cnt):
 	x,y,w,h = cv2.boundingRect(cnt)
 	img = np.zeros([y+h+20,x+w+20,3],dtype=np.uint8)
