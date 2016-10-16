@@ -68,22 +68,21 @@ image_preparer.image_show("Title",img)
 # M = cv2.getRotationMatrix2D((w/2,h/2),45,1.0)
 # rotated = cv2.warpAffine(img, M, (int(1.42*w),int(1.42*h)))
 # -----------------------------------------------
-# maxWidth = 0
-# finalHeight = 0
+maxWidth = 0
+finalHeight = 0
 
-# for a in range(0,180):
-# 	rotated = interpolation.rotate(img,(180/180)*a)
-# 	gray2 = cv2.cvtColor(rotated, cv2.COLOR_BGR2GRAY)
-# 	_,thresh2 = cv2.threshold(gray2,80,255,cv2.THRESH_BINARY)
-# 	contours2,contours2,hierarchy2 = cv2.findContours(thresh2,1,cv2.CHAIN_APPROX_SIMPLE)
-# 	x,y,w,h = cv2.boundingRect(contours2[0])
-# 	print(w)
-# 	if w>maxWidth:
-# 		print(w)
-# 		maxWidth = w
-# 		finalHeight = h
-# print(maxWidth)
-# print(finalHeight)
+for a in range(0,180):
+	rotated = interpolation.rotate(img,(180/180)*a)
+	gray2 = cv2.cvtColor(rotated, cv2.COLOR_BGR2GRAY)
+	_,thresh2 = cv2.threshold(gray2,80,255,cv2.THRESH_BINARY)
+	contours2,contours2,hierarchy2 = cv2.findContours(thresh2,1,cv2.CHAIN_APPROX_SIMPLE)
+	x,y,w,h = cv2.boundingRect(contours2[0])
+	print(w)
+	if w>maxWidth:
+		maxWidth = w
+		finalHeight = h
+print(maxWidth)
+print(finalHeight)
 # ------------------------------------------------
 # # cv2.rectangle(img,(),(),(0,255,0),3)
 
